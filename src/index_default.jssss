@@ -1,0 +1,21 @@
+import React, { useEffect } from "react"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+import fullpage from 'fullpage.js';
+import ReactFullpage from '../components/react-fullpage';
+import '../styles/main.scss';
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="section s1"><h1>Section 1</h1></div>
+      <div className="section s2"><h1>Section 2</h1></div>
+    </Layout>
+  )
+}
+
+export default IndexPage

@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+// require('./src/styles/main.scss')
 
-// You can delete this file if you're not using it
+
+exports.shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition
+}) => {
+
+  if (location.hash) {
+    return false;
+  }
+
+  return true;
+};
